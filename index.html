@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#07152a">
+  <meta name="description" content="Milczlab — cool things brewing.">
+  <title>Milczlab — Cool things brewing</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='15' fill='%2307152a'/%3E%3Cpath d='M25 10h14M29 10v19L17 47a6 6 0 0 0 5 9h20a6 6 0 0 0 5-9L35 29V10M23 43h18' fill='none' stroke='%23baff37' stroke-width='5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
+  <style>
+    :root { color-scheme: dark; font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+    * { box-sizing: border-box; }
+    html { min-height: 100%; background: #07152a; }
+    body { margin: 0; min-height: 100vh; color: #f4f7ee; background: radial-gradient(circle at 70% 48%, #113454 0, #07152a 55%); }
+    main { min-height: 100vh; max-width: 1480px; margin: auto; display: grid; grid-template-columns: minmax(0, .85fr) minmax(0, 1.15fr); align-items: center; gap: clamp(2rem, 5vw, 6rem); padding: clamp(1.5rem, 5vw, 5rem); }
+    .copy { position: relative; z-index: 1; }
+    .eyebrow { margin: 0 0 2rem; color: #baff37; font-size: .875rem; font-weight: 800; letter-spacing: .24em; text-transform: uppercase; }
+    h1 { margin: 0; max-width: 9ch; font-size: clamp(3.8rem, 7.4vw, 8rem); font-weight: 850; line-height: .94; letter-spacing: -.07em; }
+    h1 span { color: #baff37; }
+    .sub { max-width: 28rem; margin: 2rem 0 0; color: #c0d5df; font-size: clamp(1.05rem, 1.5vw, 1.3rem); line-height: 1.6; }
+    .visual { margin: 0; position: relative; border: 1px solid rgba(146, 225, 231, .22); border-radius: 2rem; overflow: hidden; box-shadow: 0 35px 100px rgba(0, 0, 0, .28); background: #08152a; }
+    .visual img { display: block; width: 100%; height: auto; aspect-ratio: 4 / 3; object-fit: cover; }
+    .wordmark { position: absolute; top: clamp(1.5rem, 5vw, 5rem); left: clamp(1.5rem, 5vw, 5rem); font-size: 1.05rem; font-weight: 800; letter-spacing: -.04em; }
+    .wordmark span { color: #baff37; }
+    @media (max-width: 800px) {
+      main { grid-template-columns: 1fr; align-content: center; gap: 2.5rem; padding-top: 7rem; }
+      h1 { font-size: clamp(3.7rem, 13vw, 6rem); }
+      .eyebrow { margin-bottom: 1.25rem; }
+      .sub { margin-top: 1.4rem; }
+      .visual { border-radius: 1.3rem; }
+      .wordmark { top: 1.5rem; left: 1.5rem; }
+    }
+  </style>
+</head>
+<body>
+  <div class="wordmark" aria-label="Milczlab">milcz<span>lab</span>.</div>
+  <main>
+    <div class="copy">
+      <p class="eyebrow">A little space to experiment</p>
+      <h1>Cool things <span>brewing.</span></h1>
+      <p class="sub">Experiments in code, automation, and whatever else gets interesting. More soon.</p>
+    </div>
+    <figure class="visual"><img src="lab-illustration.png" alt="A glowing flask beside an electronics breadboard in a playful lab scene" width="1536" height="1024"></figure>
+  </main>
+</body>
+</html>
